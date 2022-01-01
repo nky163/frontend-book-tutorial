@@ -1,6 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import {createBookReview} from './createBookReview';
-import {appendBook} from './appendBook';
+import { createBookReview } from './createBookReview';
+import { appendBook } from './appendBook';
 
 $(function() {
   $.ajax('http://localhost:1323/books')
@@ -39,3 +41,5 @@ $(function() {
     })
 })
 
+const root = document.getElementById('react-root');
+ReactDOM.render(<h1>Reactで描画する</h1>, root);

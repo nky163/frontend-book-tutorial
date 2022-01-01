@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import {Book} from "./types/book";
 import {createBookReview} from "./createBookReview";
 
