@@ -16,7 +16,6 @@ services:
       context: ./front
       dockerfile: ../docker/Dockerfile.front # contextで指定した位置からDockerfileへのパス
       
-    # command: go run main.go
     container_name: book-review-front
     ports:
       - "3000:3000"
